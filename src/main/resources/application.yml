@@ -1,0 +1,14 @@
+camel:
+  dataformat:
+    jackson:
+      auto-discover-object-mapper: true
+  springboot:
+    # The Camel context name
+    name: CamelRestJpa
+  servlet:
+    mapping:
+      contextPath: /api/*
+
+logging:
+  level:
+    org.apache.camel: debug
